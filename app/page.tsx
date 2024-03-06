@@ -28,6 +28,7 @@ const Home: React.FC = () => {
     const hands = await fetchPokerHands(5, 2);
     setHandOne(hands[0]);
     setHandTwo(hands[1]);
+    await submitAction();
   }, 300)
 
   const resetAction = () => {
