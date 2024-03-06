@@ -28,10 +28,6 @@ const Home: React.FC = () => {
     const hands = await fetchPokerHands(5, 2);
     setHandOne(hands[0]);
     setHandTwo(hands[1]);
-    setIsLoading(true);
-    const result = await fetchPokerScores([handOne.join(','), handTwo.join(',')]);
-    setResults(result);
-    setIsLoading(false);
   }, 300)
 
   const resetAction = () => {
