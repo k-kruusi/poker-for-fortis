@@ -32,7 +32,7 @@ Welcome to the Poker Validator project! This application leverages a cloud funct
    - The API seamlessly handles ties by returning all hands rank-ordered. It is the responsibility of the client application to inspect the list and determine ties by comparing the type and score of the first element with subsequent elements. This approach enhances flexibility and can be reviewed in `app/components/winner.tsx`.
 
 4. **Robust Testing Suite:**
-   - The project includes comprehensive test cases covering hands, scoring heuristics (though not exhaustive), and validation processes. Explore the test files located at `functions/src/validator/*.test.ts` and `functions/src/deal/*.test.ts`.
+   - The project includes comprehensive test cases covering hands, scoring heuristics (though not exhaustive), and validation processes. Explore the test files located at `functions/src/validator/*.test.ts` and `functions/src/deal/*.test.ts`. If your going to run the tests please do so from the `/functions` folder.
 
 5. **Optimized Execution:**
    - While the interface may not appear lightning-fast, the majority of wait time is attributed to button debounce. On Firebase, execution time for evaluating hands is distributed with approximately 50% of responses within 5ms and the remaining below 8ms.
